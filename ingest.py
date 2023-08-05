@@ -24,7 +24,7 @@ docs = text_splitter.split_documents(documents)
 
 embeddings = HuggingFaceEmbeddings(model_name=embeddings_model_name)
 # embeddings = GPT4AllEmbeddings()
-
+#change
 for d in docs:
     d.metadata = {"some": "metadata"}
 settings = ClickhouseSettings(table="vector_table", index_type= "Annoy") #vector_table #clickhouse_vector_search_example
